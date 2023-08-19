@@ -50,7 +50,7 @@ resource "azurerm_network_security_rule" "jenkins" {
   priority                    = 1002
   direction                   = "Inbound"
   access                      = "Allow"
-  protocol                    = "Any"
+  protocol                    = "*"
   source_port_range           = "*"
   destination_port_range      = "8080"
   source_address_prefix       = "*"
