@@ -20,3 +20,7 @@ variable "username" {
   default     = "adminuser"
   description = "Username for VM"
 }
+variable "aks_namespace" {
+  type    = string
+  default = "pdevops"
+}
